@@ -255,5 +255,27 @@
 /**
  * Timers: setTimeout and setInterval
  * setTimeout runs once after a defined time
+ *  setTimeout calls the first argument/callback function at some point in the future
+ *  second parameter is time in future in milliseconds
+ *  all arguments after the second parameter are arguments to the callback functions
  * setInterval keeps running forever until we stop it
  */
+
+// execute some code in the future
+const ingredients = ['olives', 'spinach'];
+const pizzaTimer = setTimeout(
+  (ing1, ing2) => console.log(`Here is your ${ing1} & ${ing2} pizza 🍕`),
+  1000,
+  ...ingredients
+);
+console.log('Waiting');
+
+if (ingredients.includes('')) clearTimeout(pizzaTimer);
+
+/**
+ * setInterval - to run over and over again
+ */
+setInterval(function () {
+  const now = new Date();
+  console.log(now);
+}, 1000);
