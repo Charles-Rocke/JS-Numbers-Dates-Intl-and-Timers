@@ -251,3 +251,9 @@
 /////////////////////////////////////////////////
 /////////////////////////////////////////////////
 // LECTURES
+
+/**
+ * Timers: setTimeout and setInterval
+ * setTimeout runs once after a defined time
+ * setInterval keeps running forever until we stop it
+ */
